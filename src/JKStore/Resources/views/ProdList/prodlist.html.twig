@@ -1,0 +1,26 @@
+{% extends 'JKStoreBundle::template.html.twig' %}
+
+{% block content %}	
+      <table valign="top" border=0> 
+        <tr>
+        <td></td>	
+	<td>
+	    <ul><b>Product List</b></ul>
+        </td></tr>
+	{% for product in groupProductList %}
+	  <tr>
+	  <td>
+
+	    <img src="{{ asset('bundles') }}/{{ product.img }}_sm.gif">
+	   </td>
+           <td>
+		<a href="{{ path('_prod', { 'prodId' : product.product_id}) }} ">
+		  <b>{{product.name}}</b>
+		</a>
+           </td>	
+          </tr>
+	{% endfor %}
+       </table>
+{% endblock %}
+
+

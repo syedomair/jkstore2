@@ -1,0 +1,17 @@
+JKStore2 is an example code using Symfony, Twig, and Doctrine DBAL
+--------------------------------------------------------------------
+
+Installation Direction
+-----------------------
+
+Install composer with the following line
+curl -sS https://getcomposer.org/installer | php
+
+Get vendor libraries with the following line. 
+php composer.phar install
+
+Configure Doctrine mysql ORM in app/config/config.yml file 
+Create and insert data in MySQL through jkstore.sql
+
+Run symfony server with the following lines.
+php app/console server:run

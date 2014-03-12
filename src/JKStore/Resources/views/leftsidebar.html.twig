@@ -1,0 +1,20 @@
+   <table border=0> 
+    <tr>
+     <td bgcolor="D8DED5" width="162" height="400" valign="top">
+      <table valign="top" border=0> 
+        <tr><td>
+	    <b>Store Categories</b>
+        </td></tr>
+	{% for category in groupCategories %}
+	  <tr>
+           <td>
+		<a href="{{ path('_prodlist', {'catId' : category.category_id}) }}"
+		  <b>{{category.name}}</b>
+		<a></a>
+           </td>	
+          </tr>
+	{% endfor %}
+       </table>
+      </td>
+    </tr>
+   </table>

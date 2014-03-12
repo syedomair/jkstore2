@@ -1,0 +1,29 @@
+{% extends 'JKStoreBundle::template.html.twig' %}
+
+{% block content %}	
+      <table valign="top" border=0> 
+        <tr><td align="left">
+	    <b>Product Display</b>
+        </td></tr>
+	  <tr>
+           <td>
+		<table border="0">
+		  <tr>
+			<td>
+			  <img src="{{ asset('bundles') }}/{{ aProduct.img }}.gif">
+			</td>
+			<td>
+			 <table border="0">
+			   <tr><td>Name:<b>{{aProduct.name}}</b></td></tr>
+			   <tr><td>Description:{{aProduct.desc}}</td></tr>
+			   <tr><td>Price:{{aProduct.price}}</td></tr>
+			 </table>	
+			</td>
+                  </tr>
+		</table>
+           </td>	
+          </tr>
+       </table>
+{% endblock %}
+
+

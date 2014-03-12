@@ -1,0 +1,12 @@
+_home:
+    pattern:  /
+    defaults: { _controller: JKStoreBundle:Home:home }
+
+_prodlist:
+    pattern:  /prodlist/catId/{catId}
+    defaults: { _controller: JKStoreBundle:ProductList:productList }
+
+_prod:
+    pattern:  /prod/prodId/{prodId}
+    defaults: { _controller: JKStoreBundle:ProductDisplay:productDisplay }
+
